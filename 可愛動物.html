@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>可愛動物</title>
+  <link rel="stylesheet" href="./navlogo.css">
+  <style>
+    body {
+      margin: 0;
+    }
+
+    /* header logo */
+    #zcakeweb2 {
+      width: 15%;
+      margin: 10px auto;
+      display: inline-block;
+      position: relative;
+      left: 35%;
+    }
+
+    .wrapper {
+      width: 50%;
+      /* 可調整的容器寬度 */
+      float: right;
+    }
+
+    .animals {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 11px;
+      row-gap: 11px;
+      margin-top: 10px;
+      margin-left: 35px;
+    }
+
+    .product-animals {
+      transition: transform 0.3s ease;
+      /* 添加過渡效果，使變化更平滑 */
+    }
+
+    .product-animals:hover {
+      transform: scale(1.1);
+      /* 鼠標懸停時放大圖片 */
+    }
+
+
+    footer {
+      display: block;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body style="background-color:navajowhite;">
+  <!-- logo header -->
+  <header style="background-color: burlywood;">
+    <div><img id="zcakeweb2" src="./logo/zcake web 2.png">
+      <h1 class="wrapper">客製工廠</h1>
+    </div>
+  </header>
+  <!-- nav  -->
+  <nav>
+    <div class="navbar">
+      <a href="BOOK NOW.html">BOOK NOW</a>
+      <a href="門市資訊.html">門市資訊</a>
+      <a href="關於我們.html">關於我們</a>
+      <div class="dropdown">
+        <button class="dropbtn">創作甜點系列
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="指定創作.html">指定創作</a>
+          <a href="可愛動物.html">可愛動物</a>
+          <a href="交通工具tes.html">交通工具</a>
+        </div>
+      </div>
+      <a href="首頁.html">首頁</a>
+    </div>
+  </nav>
+  <main>
+    <br><br><br>
+    <div class="animals">
+      <div class="product-animals"><img src="./可愛動物/哈囉哈士奇.jpg" width="89%" alt="" alt="商品 1"></div>
+      <div class="product-animals"><img src="./可愛動物/孫悟空.jpg" width="89%商品 1"></div>
+      <div class="product-animals"><img src="./可愛動物/小老虎.jpg" width="89%" alt="商品 1"></div>
+      <div class="product-animals"><img src="./可愛動物/牛跟熊.jpg" width="89%" alt="商品 1"></div>
+
+      <div class="product-animals"><img src="./可愛動物/猴.jpg" width="89%" alt="商品 1"></div>
+      <div class="product-animals"><img src="./可愛動物/土撥鼠.jpg" width="89%" alt="商品 1"></div>
+      <div class="product-animals"><img src="./可愛動物/秋田1.png" width="89%" alt="商品 1"></div>
+      <div class="product-animals"><img src="./可愛動物/小豬.jpg" width="89%" alt="商品 1"></div>
+
+      <div class="product-animals"><img src="./可愛動物/秋田.jpg" width="89%" alt="商品 1"></div>
+      <div class="product-animals"><img src="./可愛動物/雞下蛋1.png" width="89%" alt="商品 1"></div>
+      <div class="product-animals"><img src="./可愛動物/猴壽桃.jpg" width="89%" alt="商品 1"></div>
+      <div class="product-animals"><img src="./可愛動物/鬥牛犬.jpg" width="89%" alt="商品 1"></div>
+    </div>
+  </main>
+
+  <footer style="background-color: rgb(207, 168, 123);">
+    <div class="father">
+      <div class="Contactinformation">
+        <p>聯絡資訊</p>
+        <p>電話: 04-23597336</p>
+        <p>地址:台中市西屯區工業38路46號(7-11鑫工和門市斜對角)</p>
+      </div>
+      <div class="ContactPC">
+        <a href="https://www.facebook.com/zcake3846/?locale=zh_TW" target="_blank">
+          <img src="./其它logoPNG/fb.png" width="31 px"></a>
+        <a href="https://www.instagram.com/zcake3846/" target="_blank">
+          <img src="./其它logoPNG/ig去背.png" width="41 px"></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

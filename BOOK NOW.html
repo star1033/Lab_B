@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOOK NOW</title>
+  <link rel="stylesheet" href="./navlogo.css">
+  <style>
+    body {
+      margin: 0;
+    }
+
+    #zcakeweb2 {
+      width: 15%;
+      margin: 10px auto;
+      display: inline-block;
+      position: relative;
+      left: 35%;
+    }
+
+    .wrapper {
+      width: 50%;
+      /* 可調整的容器寬度 */
+      float: right;
+    }
+
+    .father {
+      width: 100%;
+      /* 設定父容器寬度 */
+      position: relative;
+      /* 父容器設置為相對定位 */
+    }
+
+    .bookingcake {
+      position: relative;
+      margin-left: 7%;
+      float: left;
+    }
+
+    .picturedate {
+      position: relative;
+      margin-top: 5%;
+      margin-left: 5%;
+      display: inline-block
+    }
+
+    footer {
+      display: block;
+      text-align: center;
+      clear: both;;
+    }
+  </style>
+</head>
+
+<body style="background-color: rgb(243, 208, 155);">
+  <header style="background-color: burlywood;" >
+    <div><img id="zcakeweb2" src="./logo/zcake web 2.png">
+      <h1 class="wrapper">客製工廠</h1>
+    </div>
+  </header>
+
+  <nav>
+    <div class="navbar">
+      <a href="BOOK NOW.html">BOOK NOW</a>
+      <a href="門市資訊.html">門市資訊</a>
+      <a href="關於我們.html">關於我們</a>
+      <div class="dropdown">
+        <button class="dropbtn">創作甜點系列
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="指定創作.html">指定創作</a>
+          <a href="可愛動物.html">可愛動物</a>
+          <a href="交通工具tes.html">交通工具</a>
+        </div>
+      </div>
+      <a href="首頁.html">首頁</a>
+    </div>
+  </nav>
+  <br>
+
+  <main>
+    <form>
+      <div class="bookingcake">
+        <h1>訂購請填寫以下資料</h1>
+        <p>訂購人姓名:<input type="text" name="userName" size="25"></p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-mail:<input type="text" name="usermail" size="41"
+            value="username@mailserver"></p>
+        <p>訂購人電話:<input type="tel" pattern="[0-9]{4}-[0-9]{6}" placeholder="例:0935-123456"></p>
+        <p>訂購人地址:<input type="text" name="useraddress" size="65"></p>
+
+
+        <label for="cakesize">您要訂購的蛋糕尺寸?</label>
+        <input list="cakesize" name="cake" id="cake">
+        <datalist id="cakesize">
+          <option value="6吋">
+          <option value="8吋">
+          <option value="10吋">
+          <option value="12吋">
+        </datalist>
+
+        <!-- <select name="cakesize[]" size="4" multiple>
+            <option value="6吋">6吋
+            <option value="8吋">8吋
+            <option value="10吋">10吋
+            <option value="12吋" selected>12吋
+          </select>
+        </p> -->
+        <p>請問要訂購給麼樣年齡層的人呢<br>
+          <input type="radio" name="userAge" value="age1">未滿20歲
+          <input type="radio" name="userAge" value="age2" checked>20~29
+          <input type="radio" name="userAge" value="age3">30~39
+          <input type="radio" name="userAge" value="age4">40歲以上
+        </p>
+        <p>描述您欲訂購的蛋糕造型?<br>
+          <textarea name="cakedetail" cols="75" rows="8"></textarea>
+        </p>
+      </div>
+      <div class="picturedate">
+        <label for="cakesize">上傳您要客製的蛋糕圖片?</label>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+        </form><input type="file" name="image" accept="image/*">
+        <input type="submit" value="上傳"><br>
+        <br>
+        <p>您要訂購的日期
+          <input type="date" name="userName">
+        </p>
+      </div>
+    </form>
+  </main>
+
+  <footer style="background-color: blanchedalmond;">
+    <div class="father">
+      <div class="Contactinformation">
+        <p>聯絡資訊</p>
+        <p>電話: 04-23597336</p>
+        <p>地址:台中市西屯區工業38路46號(7-11鑫工和門市斜對角)</p>
+      </div>
+
+      <div class="ContactPC">
+        <a href="https://www.facebook.com/zcake3846/?locale=zh_TW" target="_blank">
+          <img src="./其它logoPNG/fb.png" width="31 px"></a>
+      <a href="https://www.instagram.com/zcake3846/" target="_blank" >
+          <img src="./其它logoPNG/ig去背.png" width="41 px"></a>
+      </div>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
